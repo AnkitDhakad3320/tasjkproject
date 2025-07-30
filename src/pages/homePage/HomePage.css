@@ -1,0 +1,111 @@
+
+
+
+
+
+
+
+/* Home container: flex layout */
+.home-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Sidebar filter */
+.sidebar {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.sidebar h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sidebar label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+}
+
+/* Search input and Add Job button */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.add-job-btn {
+  padding: 10px 16px;
+  background-color: #ff3b1f;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Job grid layout */
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Job card (if not styled already) */
+.job-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.job-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.job-card .company,
+.job-card .location,
+.job-card .description {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #444;
+}
+
+.view-details-btn {
+  margin-top: 12px;
+  padding: 6px 12px;
+  background-color: #ff3b1f;
+  color: white;
+  border-radius: 8px;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-block;
+}
+
