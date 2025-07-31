@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/jobs";
+const BASE_URL = `${process.env.REACT_APP_API_URL}/api/jobs`;
 
 export const getJobs = () => axios.get(BASE_URL);
 export const getJobById = (id) => axios.get(`${BASE_URL}/${id}`);
